@@ -84,7 +84,7 @@ const initGalleryText = () => {
 				start: () => `top+=${i * window.innerHeight} top+=60%`,
 				end: () => `top+=${(i + 1) * window.innerHeight} top`,
 				scrub: 2,
-				markers: true,
+				//markers: true,
 			},
 		});
 

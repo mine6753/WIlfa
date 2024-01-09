@@ -155,11 +155,11 @@ const initHorizontal = () => {
 			-(horizontal.scrollWidth - document.documentElement.clientWidth) + 'px',
 	});
 
-	gsap.set(horizontalVerticalBoxes, { y: '-25%' });
+	gsap.set(horizontalVerticalBoxes, { y: '20%' });
 	tlHorizontal.to(
 		horizontalVerticalBoxes,
 		{
-			y: '25%',
+			y: '-30%',
 			stagger: 0.02,
 		},
 		0

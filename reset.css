@@ -159,35 +159,35 @@ main,
 
 /* Style text */
 h1 {
-	font-family: 'Nunito';
+	font-family: 'Noto Sans KR', sans-serif;
 
 	font-size: 5.9rem;
 	line-height: 1.2;
 }
 
 h2 {
-	font-family: 'Nunito';
+	font-family: 'Noto Sans KR', sans-serif;
 
 	font-size: 4.7rem;
 	line-height: 1.2;
 }
 
 h3 {
-	font-family: 'Nunito';
+	font-family: 'Noto Sans KR', sans-serif;
 
 	font-size: 3.2rem;
 	line-height: 1.2;
 }
 
 h4 {
-	font-family: 'Nunito';
+	font-family: 'Noto Sans KR', sans-serif;
 
 	font-size: 3rem;
 	line-height: 1.2;
 }
 
 p {
-	font-family: 'Nunito';
+	font-family: 'Noto Sans KR', sans-serif;
 
 	font-size: 2.6rem;
 	line-height: 1.2;
@@ -195,19 +195,19 @@ p {
 }
 
 a {
-	font-family: 'Nunito';
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 3rem;
 	color: #212121;
 }
 
 span {
-	font-family: 'Nunito';
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 1.2rem;
 	line-height: 1.5;
 }
 
 li {
-	font-family: 'Nunito';
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 1.6rem;
 	line-height: 1.5;
 }

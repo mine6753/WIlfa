@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Nunito', sans-serif;
-	src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+	src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 h1 {
@@ -30,11 +30,13 @@ h2 {
 }
 h3 {
 	font-size: 6.4rem;
+	font-weight: 600;
 }
 p,
 span {
-	font-size: 3.2rem;
-	line-height: 1;
+	font-size: 3.4rem;
+	line-height: 1.2;
+	word-spacing: 0.7rem;
 }
 
 /*?---------------> lenis CSS Settings */
@@ -86,7 +88,7 @@ html.lenis {
 	height: 100%;
 	margin: 0 auto;
 	background-color: var(--primary);
-	padding: 16rem;
+	padding: 12rem;
 }
 .intro_two .intro_card {
 	height: 200rem;
@@ -97,14 +99,18 @@ html.lenis {
 	justify-content: center;
 	gap: 18rem;
 	height: inherit;
-	padding: 3.2rem 6.4rem;
+	padding: 3.2rem 6rem;
 	text-align: center;
 }
 .intro_card_caption span {
 	display: block;
 }
 .intro_card_description p {
-	text-align: justify;
+	text-align: center;
+	line-height: 1.3;
+}
+.intro_card_info {
+	line-height: 3rem;
 }
 
 .intro_media {
@@ -143,8 +149,8 @@ html.lenis {
 .gallery_media:nth-child(1) {
 	left: 4%;
 	top: 4%;
-	width: 16rem;
-	height: 24rem;
+	width: 48rem;
+	height: 48rem;
 }
 .gallery_media:nth-child(2) {
 	right: 2%;
@@ -153,24 +159,24 @@ html.lenis {
 	height: 48rem;
 }
 .gallery_media:nth-child(3) {
-	right: 8%;
-	top: 48%;
-	width: 24rem;
-	height: 48rem;
+	right: 4%;
+	top: 43%;
+	width: 48rem;
+	height: 60rem;
 }
 .gallery_media:nth-child(4) {
 	left: 8%;
 	top: 24%;
-	width: 32rem;
+	width: 48rem;
 	height: 48rem;
 }
 .gallery_media:nth-child(5) {
 	left: 8%;
 	top: 64%;
-	width: 32rem;
-	height: 48rem;
+	width: 48rem;
+	height: 60rem;
 }
-
+/* 16,24 | 32,48 | 24,48 | 32,48 | 32,48 | 32,48 */
 .gallery_text {
 	position: relative;
 	height: 100vh;
@@ -183,29 +189,29 @@ html.lenis {
 	top: 50%;
 	transform: translateY(-50%);
 	width: 100%;
-	height: 26rem;
+	height: 12rem;
 	line-height: 12rem;
 
 	text-align: center;
 	color: var(--primary);
 	overflow: hidden;
 }
+/*
 .gallery_text_items::after {
 	content: '(';
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0;
 	left: 25rem;
 	font-size: 12rem;
 }
 .gallery_text_items::before {
 	content: ')';
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0;
 	right: 25rem;
 	font-size: 12rem;
 }
+/*
 /*?---------------> part2 */
 .connect {
 	position: relative;
@@ -223,7 +229,17 @@ html.lenis {
 	gap: 10rem;
 	padding: 12rem;
 }
-
+.connect_caption_info {
+	position: absolute;
+	bottom: 18%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.connect_caption_info span {
+	font-size: 2rem;
+}
 .connect_title {
 	text-transform: uppercase;
 	position: relative;
@@ -235,6 +251,7 @@ html.lenis {
 
 .connect_caption span {
 	display: block;
+	line-height: 1.2;
 }
 
 .connect_media {
@@ -300,7 +317,6 @@ html.lenis {
 	justify-content: center;
 	gap: 8rem;
 }
-
 .horizontal_box_title {
 	position: relative;
 	display: flex;
@@ -313,12 +329,30 @@ html.lenis {
 	color: var(--primary);
 }
 
+.horizontal_box_container .horizontal_box_title {
+	position: relative;
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: inherit;
+	height: inherit;
+	z-index: 10;
+	color: var(--primary);
+}
+
 .horizontal_box--vertical .horizontal_box_title {
 	color: var(--secondary);
 }
 .horizontal_box_paragraph {
 	display: flex;
 	gap: 2rem;
+}
+.horizontal_box_paragraph p,
+span {
+	font-size: 2.8rem;
+	line-height: 1.4;
 }
 .horizontal_box_media {
 	position: absolute;
@@ -338,11 +372,13 @@ html.lenis {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	gap: 8rem;
+	gap: 4rem;
 }
+
 .horizontal_box.horizontal_box--end {
 	width: 100vw;
 }
+
 .horizontal_box--end .horizontal_box_title {
 	color: var(--secondary);
 }
@@ -383,7 +419,7 @@ html.lenis {
 	}
 	p,
 	span {
-		font-size: 3.2rem;
+		font-size: 3rem;
 		line-height: 1;
 	}
 	.intro {
@@ -395,6 +431,10 @@ html.lenis {
 	}
 	.intro_one {
 		height: 100%;
+	}
+	.connect_caption_info {
+		padding: 0 2rem;
+		bottom: 10%;
 	}
 	.gallery_text_wrapper {
 		text-align: center;
@@ -416,6 +456,27 @@ html.lenis {
 	.connect_media.image--back {
 		right: 14.5rem;
 	}
+	.gallery_media:nth-child(1) {
+		width: 24rem;
+		height: 24rem;
+	}
+	.gallery_media:nth-child(2) {
+		width: 32rem;
+		height: 48rem;
+	}
+	.gallery_media:nth-child(3) {
+		width: 24rem;
+		height: 48rem;
+	}
+	.gallery_media:nth-child(4) {
+		width: 32rem;
+		height: 48rem;
+	}
+	.gallery_media:nth-child(5) {
+		width: 32rem;
+		height: 48rem;
+	}
+	/* 16,24 | 32,48 | 24,48 | 32,48 | 32,48 | 32,48 */
 	/*?---------------> Resp horizontal */
 	.horizontal {
 		width: 100%;
@@ -435,5 +496,11 @@ html.lenis {
 	.horizontal_box.horizontal_box--vertical {
 		width: inherit;
 		height: 100%;
+	}
+	.m-display-none {
+		display: none;
+	}
+	.outro_title h3{
+		padding-bottom: 2rem;
 	}
 }
